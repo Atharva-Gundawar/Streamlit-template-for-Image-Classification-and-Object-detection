@@ -47,4 +47,7 @@ def main():
     uploaded_file.close()
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except KeyboardInterrupt as e:
+        print('Stopped due to KeyboardInterrupt')
