@@ -1,15 +1,16 @@
 """
 About:
-    Single Image classification for "csv", "py", "png", "jpg" file types 
+    Single Image Segmentation for "csv", "py", "png", "jpg" file types 
     to increase file upload size use : streamlit run ImageClassification.py --server.maxUploadSize=1028
 
 Usage:
-    Replace contents of predict function 
+    Replace contents of segment function 
     Run using :streamlit run ImageClassification.py .
 """
 
 import streamlit as st
 import Image
+import numpy as np
 
 FILE_TYPES = ["csv", "py", "png", "jpg"]
 STYLE = """
@@ -20,8 +21,8 @@ img {
 </style>
 """
 
-def predict(uploaded_file):
-    return "label"
+def segment(uploaded_file):
+    return np.zeros((100,100))
 
 
 
@@ -40,9 +41,9 @@ def main():
     image = Image.open(uploaded_file)
     st.image(image, caption='Uploaded Image.', use_column_width=True)
     st.write("")
-    st.write("Classifying...")
-    label = predict(uploaded_file)
-    st.write(f'{label}')
+    st.write("Proessing...")
+    res_image = segment(uploaded_file)
+    st.image(res_image, caption='Segmented Image')
     
     uploaded_file.close()
 
