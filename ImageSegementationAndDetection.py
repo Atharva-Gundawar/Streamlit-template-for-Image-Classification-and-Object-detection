@@ -1,11 +1,11 @@
 """
 About:
     Single Image Segmentation for "csv", "py", "png", "jpg" file types 
-    to increase file upload size use : streamlit run ImageClassification.py --server.maxUploadSize=1028
+    to increase file upload size use : streamlit run ImageSegementationAndDetection.py --server.maxUploadSize=1028
 
 Usage:
     Replace contents of segment function 
-    Run using :streamlit run ImageClassification.py .
+    Run using :streamlit run ImageSegementationAndDetection.py .
 """
 
 import streamlit as st
