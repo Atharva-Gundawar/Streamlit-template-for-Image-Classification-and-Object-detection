@@ -1,9 +1,8 @@
-opencv-python==4.5.1.48
-streamlit==0.62.1
-aiortc==1.2.0
-Image==1.5.33
 streamlit_webrtc==0.12.0
+av==8.0.3
 numpy==1.18.4
+Image==1.5.33
+aiortc==1.2.0
 typing==3.10.0.0
 pathlib==1.0.1
-av==8.0.3
+streamlit==0.62.1
