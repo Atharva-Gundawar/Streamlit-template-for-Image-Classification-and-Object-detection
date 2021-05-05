@@ -1,7 +1,17 @@
 """
-"This Template uses a model and code from "
-"https://github.com/robmarkcole/object-detection-app. and https://github.com/whitphx/streamlit-webrtc-example "
-"Many thanks to these projects."
+About:
+    Object detection and classification of live feed.
+    To increase file upload size use : streamlit run LiveFeedClassificationAndDetection.py --server.maxUploadSize=1028
+
+Usage:
+    Replace contents of segment function 
+    Run using :streamlit run LiveFeedClassificationAndDetection.py .
+
+Refrences:
+    "This Template uses a model and code from "
+    "https://github.com/robmarkcole/object-detection-app. and https://github.com/whitphx/streamlit-webrtc-example "
+    "Many thanks to these projects."
+
 """
 
 
